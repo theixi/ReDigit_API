@@ -33,7 +33,7 @@ def predict():
         return "Model error."
 
 
-model = joblib.load("recon.pkl")
+model = joblib.load("new_recon.pkl")
 
 if __name__ == "__main__":
     app.run(debug=True)
