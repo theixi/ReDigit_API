@@ -33,7 +33,7 @@ def predict():
         return "Model error."
 
 
-model = joblib.load("new_recon.pkl")
+model = tf.keras.models.load_model('saved_model/recon_updated')
 
 if __name__ == "__main__":
     app.run(debug=True)
